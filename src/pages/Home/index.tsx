@@ -4,7 +4,7 @@ import { ItemType } from "../../common/type";
 import { PRODUCTS_URL_API, SEARCH_PRODUCTS_URL_API } from "../../constants";
 import { getAllProduct, searchProduct } from "../../services/api";
 import Header from "../../components/Header";
-import Content from "../../components/Content/Content";
+import Content from "../../components/Content";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";

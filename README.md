@@ -1,46 +1,90 @@
-# Getting Started with Create React App
+# 1.Name Project: Test Frontend Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 2.Setup Project
+   `2.1.You can clone project by run:`
+    git clone https://github.com/Long313/test_frontend.git
 
-## Available Scripts
+   `2.2. Install node_modules folder by run:`
+    npm install
 
-In the project directory, you can run:
 
-### `npm start`
+   `2.3.In the project directory, you can run project:`
+    npm start
+    
+# 3.Features
+  `In this project, it has three pages with features:`
+   *First, the homepage:
+    - Show all list product.
+    - Search product by product name.
+    - When you scroll down auto loadmore new 20 products .
+    - Auto scroll top when click button scroll top.
+    - Redirect to category product page when click item at sidebar.
+    - When you click product redirect detail product page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   *Second, the product detail page:
+    - Display information of product.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   *Third, the category product page:
+     - Show all products of the same type
 
-### `npm test`
+# 4. Project folder structure
+    /src
+        /common
+            - index.ts
+            - type.ts
+        /components
+            /Content
+                - index.tsx
+                - contentStyle.css
+            /Header
+                - index.tsx
+                - headerStyle.css
+            /Rating
+                - index.tsx
+                - starStyle.css
+            /ScrollToTopButton
+                - index.tsx
+                - scrollToTopButtonStyle.css
+        /config
+            - index.ts
+        /constants
+            - index.ts
+        /hooks
+            - useDebounce.ts
+        /images
+            - arrowRight.svg
+            - home.svg
+        /pages
+            /CategoryProduct
+                - index.tsx
+                - categoryProductStyle.css
+            /Home
+                - index.tsx
+                - homeStyle.css
+            /ProductDetail
+                - index.tsx
+                - productDetailStyle.css
+        /services
+            - api.ts
+        /utils
+            -api.ts
+        App.css
+        App.tsx
+        index.css
+        index.tsx
+    - .env
+    - package.json
+    - tsconfig.json
+# 5. Library and technology used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - ReactJS
+    - React router dom
+    - Axios
+    - TypeScript
+    - React infinite scroll component
+    - React toastify
+    - React icons
 
-### `npm run build`
+# 6. Author
+    Fullname: Xuan Long Tran
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

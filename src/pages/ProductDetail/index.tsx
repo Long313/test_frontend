@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import "./productDetail.css";
+import "./productDetailStyle.css";
 import { Link, useParams } from "react-router-dom";
 import { PRODUCTS_URL_API } from "../../constants";
 import { getOneProduct } from "../../services/api";
 import Header from "../../components/Header";
 import arrow from "../../images/arrowRight.svg";
 import home from "../../images/home.svg";
-import { capitalizeFirstLetter } from "../../common/type";
 import { toast } from "react-toastify";
 import { FaCartShopping } from "react-icons/fa6";
+import { capitalizeFirstLetter } from "../../common";
 
 interface DetailType {
   category: string;
