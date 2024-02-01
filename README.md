@@ -1,31 +1,32 @@
 # 1.Name Project: Test Frontend Project
+   Link github: `https://github.com/Long313/test_frontend`
 
 # 2.Setup Project
-   `2.1.You can clone project by run:`
-    git clone https://github.com/Long313/test_frontend.git
+   *2.1.You can clone project by run:`
+    git clone `https://github.com/Long313/test_frontend.git`
 
-   `2.2. Install node_modules folder by run:`
+   *2.2. Install node_modules folder by run:`
     npm install
 
 
-   `2.3.In the project directory, you can run project:`
+   *2.3.In the project directory, you can run project:
     npm start
     
 # 3.Features
-  `In this project, it has three pages with features:`
-   *First, the homepage:
-    - Show all list product.
-    - Search product by product name.
-    - When you scroll down auto loadmore new 20 products .
-    - Auto scroll top when click button scroll top.
-    - Redirect to category product page when click item at sidebar.
-    - When you click product redirect detail product page.
+  In this project, it has three pages with features:
+     *First, the homepage:
+     - Show all list product.
+     - Search product by product name.
+     - When you scroll down auto loadmore new 20 products .
+     - Auto scroll top when click button scroll top.
+     - Redirect to category product page when click item at sidebar.
+     - When you click product redirect detail product page.
 
-   *Second, the product detail page:
-    - Display information of product.
+     *Second, the product detail page:
+     - Display information of product.
 
-   *Third, the category product page:
-     - Show all products of the same type
+     *Third, the category product page:
+     - Show all products of the same type.
 
 # 4. Project folder structure
     /src
@@ -75,16 +76,16 @@
     - .env
     - package.json
     - tsconfig.json
-# 5. Library and technology used
 
-    - ReactJS
-    - React router dom
-    - Axios
+# 5. Library and technology used
+    - ReactJS.
+    - React router dom.
+    - Axios.
     - TypeScript
-    - React infinite scroll component
-    - React toastify
-    - React icons
+    - React infinite scroll component.
+    - React toastify.
+    - React icons.
 
 # 6. Author
-    Fullname: Xuan Long Tran
+    Fullname: Xuan Long Tran.
 
