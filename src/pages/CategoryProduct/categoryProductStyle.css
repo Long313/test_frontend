@@ -1,0 +1,17 @@
+.container_product_category .list_product_category {
+ margin-top: 1000px;
+ width: 100%;
+ height: fit-content;
+ display: flex;
+ flex-direction: row;
+}
+
+.container_product_category .container_content {
+    margin-left: 0;
+    margin-top: calc(var(--height-header) + 50px);
+}
+
+.container_path a:hover .home_link {
+    cursor: pointer;
+    color: var(--primary-color);
+}
