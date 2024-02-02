@@ -5,28 +5,28 @@
    *2.1.You can clone project by run:`
     git clone `https://github.com/Long313/test_frontend.git`
 
-   *2.2. Install node_modules folder by run:`
+    *2.2. Install node_modules folder by run:`
     npm install
 
-
-   *2.3.In the project directory, you can run project:
+    *2.3.In the project directory, you can run project:
     npm start
     
 # 3.Features
-  In this project, it has three pages with features:
-     *First, the homepage:
-     - Show all list product.
-     - Search product by product name.
-     - When you scroll down auto loadmore new 20 products .
-     - Auto scroll top when click button scroll top.
-     - Redirect to category product page when click item at sidebar.
-     - When you click product redirect detail product page.
+    In this project, it has three pages with features:
+        *First, the homepage:
+         - Show all list product.
+         - Search product by product name.
+         - When you scroll down auto loadmore new 20 products .
+         - Auto scroll top when click button scroll top.
+         - Redirect to category product page when click item at sidebar.
+         - When you click product redirect detail product page.
+         - Sort items following name or item's price.
+        
+        *Second, the product detail page:
+         - Display information of product.
 
-     *Second, the product detail page:
-     - Display information of product.
-
-     *Third, the category product page:
-     - Show all products of the same type.
+        *Third, the category product page:
+         - Show all products of the same type.
 
 # 4. Project folder structure
     /src

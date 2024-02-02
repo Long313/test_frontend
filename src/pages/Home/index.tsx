@@ -8,6 +8,7 @@ import Content from "../../components/Content";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { handleSortList } from "../../common";
 
 function Home() {
   const [data, setData] = useState<ItemType[]>([]);
@@ -20,6 +21,7 @@ function Home() {
   const [hasMore, setHasMore] = useState<boolean>(false);
   const [showGoToTop, setShowGoToTop] = useState<boolean>(false);
   const [scrollY, setScrollY] = useState<number>(0);
+  const [sortValue, setSortValue] = useState("");
   const preScrollRef = useRef<number>(0);
   useEffect(() => {
     preScrollRef.current = scrollY;
@@ -88,7 +90,7 @@ function Home() {
         setHasMore(false);
         setShowGoToTop(false);
       }
-      if (preScrollRef.current >= window.scrollY ) {
+      if (preScrollRef.current >= window.scrollY) {
         setHasMore(false);
       }
     };
@@ -106,6 +108,15 @@ function Home() {
     });
   };
   // useEffect(() => {}, []);
+  const handleSortItem = (e: Event | any) => {
+    console.log("event", e.target.value);
+    setSortValue(e.target.value);
+  };
+  useEffect(() => {
+    const result = handleSortList(sortValue,data);
+    console.log("Result", result);
+    setData(result);
+  },[sortValue])
   return (
     <div className="App">
       <Header onSearch={handleGetParamsSearch} />
@@ -161,6 +172,15 @@ function Home() {
               <Link to="products/category/lighting">Lighting</Link>
             </li>
           </ul>
+          <div className="container_sort">
+            <p>Sort item</p>
+            <select onChange={handleSortItem} value={sortValue}>
+              <option value="">All item</option>
+              <option value="name">Sort by name A - Z</option>
+              <option value="low">Sort by price from low to high</option>
+              <option value="high">Sort by price from hight to low</option>
+            </select>
+          </div>
         </div>
         <div className="container_home_right">
           {paramsSearch && searchData?.length > 0 ? (
