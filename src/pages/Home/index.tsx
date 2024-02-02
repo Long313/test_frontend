@@ -107,14 +107,11 @@ function Home() {
       behavior: "smooth",
     });
   };
-  // useEffect(() => {}, []);
   const handleSortItem = (e: Event | any) => {
-    console.log("event", e.target.value);
     setSortValue(e.target.value);
   };
   useEffect(() => {
     const result = handleSortList(sortValue,data);
-    console.log("Result", result);
     setData(result);
   },[sortValue])
   return (
@@ -175,7 +172,7 @@ function Home() {
           <div className="container_sort">
             <p>Sort item</p>
             <select onChange={handleSortItem} value={sortValue}>
-              <option value="">All item</option>
+              <option value="">Sort item</option>
               <option value="name">Sort by name A - Z</option>
               <option value="low">Sort by price from low to high</option>
               <option value="high">Sort by price from hight to low</option>

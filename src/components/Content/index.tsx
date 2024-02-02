@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { ItemType } from "../../common/type";
-import "./contentStyle.css";
-import Rating from "../Rating";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { capitalizeFirstLetter } from "../../common";
+import { ItemType } from "../../common/type";
+import Rating from "../Rating";
+import "./contentStyle.css";
 
 export default function Content(props: any) {
   const { data } = props;
